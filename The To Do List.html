@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0px auto;
+        }
+
+        .boxInput {
+            padding: 2rem;
+            background-color: #f44336;
+            text-align: center;
+
+        }
+
+        .boxInput div {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .boxInput input {
+            width: 60%;
+            height: 40px;
+            /* border-radius: 10px; */
+            padding: 10px;
+        }
+
+        .boxInput button {
+            width: 20%;
+            height: 40px;
+        }
+
+
+
+        ul {
+            list-style: none;
+            width: 100%;
+        }
+
+        ul li {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            background-color: #eee;
+            cursor: pointer;
+        }
+
+        ul li:hover {
+            background: #ddd;
+        }
+
+        ul li:nth-child(odd) {
+            background: #f9f9f9;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="boxInput">
+            <h2>My To Do List</h2>
+            <div>
+                <input type="text" placeholder="Title">
+                <button>add</button>
+            </div>
+        </div>
+
+        <ul>
+            <li class="che">
+                <span class="valueItem">dklka;lj;</span>
+                <span>x</span>
+            </li>
+            <li>
+                <span class="valueItem">dklka;lj;</span>
+                <span>x</span>
+            </li>
+            <li>
+                <span class="valueItem">dklka;lj;</span>
+                <span>x</span>
+            </li>
+        </ul>
+    </div>
 </body>
+
 </html>
