@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
+
+body{
+    background: #2A7B9B;
+    height: 100vh;
+    background: linear-gradient(140deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    
+}
+
 .container {
     width: 90%;
-    margin: 0px auto;
+    margin: 5px auto;
 }
 
 .boxInput {
@@ -50,9 +58,11 @@ ul li {
     justify-content: start;
     background-color: #eee;
     cursor: pointer;
-    gap: 10px;
+    /* gap: 10px; */
     align-items: center;
     overflow: hidden;
+    margin-top: 5px;
+    box-shadow: 0px 0px 8px #f1aaaa;
 
 }
 
@@ -83,7 +93,7 @@ ul .checked {
 
 /*  */
 ul li:nth-child(odd) {
-    background: #f9f9f9;
+    background: #d1d0d0;
 }
 
 
