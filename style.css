@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.boxInput {
+    padding: 2rem;
+    background-color: #f44336;
+    text-align: center;
+
+}
+
+.boxInput div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.boxInput input {
+    width: 60%;
+    height: 40px;
+    /* border-radius: 10px; */
+    padding: 10px;
+}
+
+.boxInput button {
+    width: 20%;
+    height: 40px;
+}
+
+
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+ul li {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: start;
+    background-color: #eee;
+    cursor: pointer;
+    gap: 10px;
+    align-items: center;
+
+}
+
+ul li div {
+    width: 100%;
+    padding: 10px;
+}
+
+ul li .valueItem {
+    width: 100%;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+
+ul .checked {
+    background-color: #888 !important;
+    color: white;
+}
+
+/*  */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+
+
+/* ///////////////////////////////////////icon */
+.iconNone {
+    display: none;
+}
+
+.iconNoInlin {
+    display: inline;
+}
+
+
+
+
+.removeList {
+    z-index: 99;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.removeList:hover {
+    background-color: #f44336;
+}
