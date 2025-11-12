@@ -5,6 +5,7 @@
 }
 
 body{
+    overflow: hidden;
     background: #2A7B9B;
     height: 100vh;
     background: linear-gradient(140deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
@@ -13,14 +14,19 @@ body{
 
 
 .container {
+    height: 100vh;
+    overflow-y: auto;  
+    overflow-x: hidden;
+
     width: 90%;
     margin: 0px auto;
-    margin-top: 5px;
+    margin-top: 5px; 
+    padding-bottom: 10px;
 }
 
 .boxInput {
     padding: 2rem;
-    background-color: #f44336;
+    background-color: #f75c4c; 
     text-align: center;
 
 }
@@ -49,6 +55,7 @@ body{
 ul {
     list-style: none;
     width: 100%;
+   /* overflow-x: scroll; */
 }
 
 ul li {
@@ -63,6 +70,7 @@ ul li {
     /* gap: 10px; */
     align-items: center;
     overflow: hidden;
+    transition: 200ms;
 
 }
 
@@ -100,7 +108,9 @@ ul li:nth-child(odd) {
 
 /* ///////////////////////////////////////icon */
 .iconNone {
-    display: none;
+    display: none; 
+    color:green;
+    transition: 200ms;
 }
 
 .iconNoInlin {
