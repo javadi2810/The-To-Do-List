@@ -28,8 +28,14 @@ document.querySelector(".btnaddtoList").addEventListener("click", function () {
 
 // ایجاد فانکشن برای وقتی که روی هر لیست مان کلیک انجام شد
 function eventLi(e) {
-
     const List = e.currentTarget;
+
+    
+    // حذف کردن  لیست
+    if (e.target.classList.contains("removeList")) {
+        List.remove()
+    }
+
     List.classList.toggle("checked")
 
 
@@ -42,11 +48,6 @@ function eventLi(e) {
 
     // نمایش تیک 
     List.querySelector(".iconNone").classList.toggle("iconNoInlin")
-
-    // حذف کردن  لیست
-    if (e.target.classList.contains("removeList")) {
-        List.remove()
-    }
 
 }
 
